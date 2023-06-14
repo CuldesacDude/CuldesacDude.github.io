@@ -1,3 +1,4 @@
+'use strict';
 function initialize() {
 
     const countryFlags = new Map();
