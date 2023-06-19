@@ -191,10 +191,16 @@
           <div class="card">
             <img class="card-img-top" src="src/toryi.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">Music Mixing based on Location</h4>
+              <h4 class="card-title">Music+: Audio Mixing based on Location</h4>
               <p class="card-text"> Live audio stream mixing based on user device location.</p>
               <div class="text-center">
-                <a href="#" class="btn btn-success" onclick="musicPage()">Link</a>
+                <button type="button" class="collapsible btn btn-success">Open</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <!-- <a href="#" class="btn btn-success" onclick="musicPage()">Link</a> -->
               </div>
             </div>
           </div>
@@ -209,9 +215,15 @@
             <img class="card-img-top" src="src/toryi.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
               <h4 class="card-title">VR Game Development for kinesiology studies</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
               <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
+                <button type="button" class="collapsible btn btn-success">Open</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <!-- <a href="#" class="btn btn-success">Link</a> -->
               </div>
             </div>
           </div>
@@ -224,53 +236,36 @@
               <h4 class="card-title">Product Landing Page</h4>
               <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
+                <button type="button" class="collapsible btn btn-success">Open</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <!-- <a href="#" class="btn btn-success">Link</a> -->
               </div>
             </div>
           </div>
         </div>
       </div>
       <br>
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card">
-            <img class="card-img-top" src="src/toryi.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Messaging Service</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!--Script for colapsable screens so show data-->
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-        <div class="col-lg-4 mt-4">
-          <div class="card">
-            <img class="card-img-top" src="src/toryi.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Twitter Clone</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mt-4">
-          <div class="card">
-            <img class="card-img-top" src="src/toryi.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Blog App</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+      </script>
   </section>
 
   <!-- contact section-->
@@ -319,16 +314,16 @@
   </section>
 
   <!-- footer section-->
-  <footer class="container-fluid footer" id="footer">
-    <!-- social media icons -->
-    <div class="social-icons mt-4">
+  <!-- <footer class="container-fluid footer" id="footer"> -->
+  <!-- social media icons -->
+  <!-- <div class="social-icons mt-4">
       <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
     </div>
-  </footer>
+  </footer> -->
 
 
   <!-- load javascript after loading all html content -->

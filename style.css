@@ -5,6 +5,30 @@ body {
     margin: 0;
 }
 
+/* for collapsable sections*/
+
+.collapsible {
+    background-color: #008000;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+}
+
+.collapsible:hover {
+    background-color: #004e00;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
 
 /* hero background image */
 .bgimage {
