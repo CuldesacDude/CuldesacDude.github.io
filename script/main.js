@@ -1,4 +1,3 @@
-'use strict';
 function initialize() {
 
     const countryFlags = new Map();
@@ -72,10 +71,4 @@ function initialize() {
             }
         })
         .catch(error => console.error(error));
-
-    console.log("DESC:", countryDescriptions);
-    console.log("DESC2:", description);
-    //console.log("Guat:",countryDescriptions.get("Guatemala"));
-    console.log("COORDS:", countryCapitalCoords);
-    //console.log("Guat Coords:",countryCapitalCoords.get('Guatemala'));
 }

@@ -12,6 +12,10 @@
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
+  <!--World Viewer Map-->
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+  <script src="./script/main.js "></script>
+
 </head>
 
 <body>
@@ -49,7 +53,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-          <h2 class="hero_title">Kevin Ramirez Portfolio</h2>
+          <h2 class="hero_title">Kevin Ramirez</h2>
           <p class="hero_desc">Web developer and aspiring VR developer</p>
         </div>
       </div>
@@ -243,24 +247,44 @@
           </div>
         </div>
       </div>
-      <br>
-      <!--Script for colapsable screens so show data-->
-      <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
 
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-      </script>
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+          <img class="card-img-top" src="src/webGL.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">World Flag viewer</h4>
+            <p class="card-text">Look at the capital and flags of all countries.</p>
+            <div class="text-center">
+              <button type="button" class="collapsible btn btn-success">Open</button>
+              <div class="content">
+                <p>A map for viewing the capitals of the world using wiki.</p>
+                <a href="https://github.com/CuldesacDude/WorldViewer" class="btn btn-success">Link</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <!--Script for colapsable screens so show data-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </section>
 
   <!-- contact section-->
